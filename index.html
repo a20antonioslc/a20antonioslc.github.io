@@ -56,7 +56,7 @@
                 </article>
             </section>
             <section>
-                <h2>Plataformas de streaming</h2>
+                <h2 id="plataformas">Plataformas de streaming</h2>
                 <table border="1">
                     <thead>
                         <tr>
@@ -66,8 +66,134 @@
                             <th>Precio</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr>
+                            <td>Disney+</td>
+                            <td><a href="https://www.disneyplus.com/es-es/movies/deadpool-2/LSuXSQ3S5mxU">Enlace</a></td>
+                            <td>N/A</td>
+                            <td>8,99€<a href="#tfoot1">1</a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Prime Video</td>
+                            <td rowspan="2"><a href="https://www.directv.com/movies/Deadpool-2-V1ZxbU5wR0VkcUVPZGFyNVMyV3Z4dz09">Enlace</a></td>
+                            <td rowspan="2">7.7/10</td>
+                            <td>2.99€<sup><a href="#tfoot2">2</a></sup></td>
+                        </tr>
+                        <tr>
+                            <td>12.99€<sup><a href="#tfoot3">3</a></sup></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Apple TV</td>
+                            <td rowspan="2"><a href="https://tv.apple.com/us/movie/deadpool-2/umc.cmc.5xr37zz6pqqngmu07q4d0mpsm">Enlace</a></td>
+                            <td rowspan="2">8.4/10</td>
+                            <td>3.99€<sup><a href="#tfoot2">2</a></sup></td>
+                        </tr>
+                        <tr>
+                            <td>13.99€<sup><a href="#tfoot3">3</a></sup></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" id="tfoot1"><sup>1</sup>: Coste de suscripción a la plataforma de streaming.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="tfoot2"><sup>2</sup>: Coste de alquiler de la película en la plataforma.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="tfoot3"><sup>3</sup>: Coste de compra de la película en la plataforma.</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </section>
+            <section>
+                <h2 id="media">Media</h2>
+                <article>
+                    <h3>Imágenes</h3>
+                    <img width="40%" src="media/images/poster.jpg" alt="Póster promocional de la película, en el que aparecen Deadpool, Cable, y Domino, otra compañera de Deadpool.">
+                    <img width="60%" src="media/images/deadpool_posando.webp" alt="Deadpool posando sobre una silla, mientras le cae una lluvia de casquillos de bala.">
+                    <img width="60%" src="media/images/deadpool_cable.jpg" alt="Cable tomando a Deadpool en brazos, mientras éste se agarra a su hombro y levanta una pierna.">
+                </article>
+                <article>
+                    <h3>Tráiler</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ryfQrwQQ3KA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+            </section>
+            <section>
+                <h2 id="reseña">Reseña</h2>
+                <article>
+                    <p>Deja tu propia reseña sobre la película.</p>
+                </article>
+                <article>
+                    <form>
+                        <div>
+                            <label for="nombre">Tu nombre</label>
+                            <input type="text" id="nombre" name="nombre"/>
+                        </div>
+                        <div>
+                            <label for="email">Correo de contacto <sup>(opcional)</sup></label>
+                            <input type="email" id="email"/>
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono de contacto <sup>(opcional)</sup></label>
+                            <input type="tel" id="telefono" nombre="telefono"/>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha de visualización</label>
+                            <input type="date" id="fecha" name="fecha"/>
+                        </div>
+                        <div>
+                            <label for="valoracion">Tu valoración</label>
+                            <select id="valoracion">
+                                <option value="1">1/5</option>
+                                <option value="2">2/5</option>
+                                <option value="3">3/5</option>
+                                <option value="4">4/5</option>
+                                <option value="5">5/5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>¿Volverías a verla?<p>
+                            <input type="radio" id="si" name="repetir"/>
+                            <label for="si">Sí</label>
+                            <input type="radio" id="no" name="repetir"/>
+                            <label for="no">No</label>
+                            <input type="radio" id="con_amigos" name="repetir"/>
+                            <label for="con_amigos">Sólo con amigos</label>
+                        </div>
+                        <div>
+                            <label for="opinion">Opinión detallada <sup>(opcional)</sup></label>
+                            <textarea name="opinion" id="opinion"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section>
+                <h2 id="links">Enlaces de interés</h2>
+                    <article>
+                        <ul>
+                            <li><a href="https://es.wikipedia.org/wiki/Deadpool_2">Wikipedia</a>: Artículo de la película en Wikipedia.</li>
+                            <li><a href="https://tvtropes.org/pmwiki/pmwiki.php/Film/Deadpool2">TVTropes</a>: Entrada de la película en TV Tropes (en inglés).</li>
+                            <li><a href="https://www.rottentomatoes.com/m/deadpool_2">Rotten Tomatoes</a>: Reseña de la película en Rotten Tomatoes (en inglés).</li>
+                        </ul>
+                    </article>
+                </h2>
+            </section>
+            <section>
+                <h2 id="trivia">Trivia</h2>
+                <article>
+                    <ul>
+                        <li>Aunque tuvo el doble de presupuesto, facturó más o menos lo mismo en taquilla que la primera entrega.</li>
+                        <li>Obtuvo una valoración de 85% en Rotten Tomatoes, contra 84% de la entrega anterior.</li>
+                        <li>Aparece el famoso actor Brad Pitt... como Vanisher, un personaje invisible cuya cara (y cuerpo) no se ven en ningún momento de la película. Originalmente iba a interpretar a Cable, pero debido a problemas sólo pudo cubrir el rol de Vanisher, lo cual fue filmado en dos horas durante la posproducción.</li>
+                    </ul>
+                </article>
+            </section>
         </main>
+        <footer>
+            <p>Hecho por Antonio Salvador López Criado, alumno de 1º de DAW 2022/2023</p>
+        </footer>
     </body>
 </html>

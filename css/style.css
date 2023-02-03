@@ -22,6 +22,11 @@ header, main, footer{
     margin: auto;
 }
 
+p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
 header {
     text-align: center;
     position: sticky;
@@ -102,7 +107,6 @@ nav li:hover a {
 }
 
 h2, h3 {
-    display: inline-block;
     margin-left: 3rem;
     margin-bottom: 1rem;
     text-shadow: 0.15rem 0.15rem #000;
@@ -110,25 +114,45 @@ h2, h3 {
 
 h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 h3 {
     font-size: 1.5rem;
 }
 
-.char_box {
+.inicio {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.inicio h2 {
+    width: 100%;
+}
+
+.inicio .text_box {
+    width: 45%;
+}
+
+.inicio h3 {
+    text-align: center;
+}
+
+.inicio p {
+    text-align: justify;
+}
+
+.characters {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
 }
 
 .char_box p {
     width: 80%;
-
 }
 
-p {
-    margin-bottom: 2rem;
-}
 img {
     width: 100%;
 }
